@@ -19,7 +19,7 @@ export const About: React.FC = () => {
               I am focused on designing scalable and reliable systems while enabling the next generation of technologists.
             </p>
             <p>
-              My journey into technology began with a deep curiosity about how systems communicate at scale. Starting as a software developer, I became increasingly drawn to the infrastructure layer, the foundation that determines how applications perform in real-world environments. This led me into Cloud and DevOps engineering, where I specialize in building resilient platforms, automating delivery pipelines, and ensuring systems are production-ready.
+              My journey into technology began with a deep curiosity about how systems communicate at scale. I became increasingly drawn to the infrastructure layer, the foundation that determines how applications perform in real-world environments. This led me into Cloud and DevOps engineering, where I specialize in building resilient platforms, automating delivery pipelines, and ensuring systems are production-ready.
             </p>
             <p>
               Today, I operate at the intersection of engineering execution and ecosystem development. I build not just infrastructure, but systems and communities that scale. My approach is grounded in a simple principle that technology should be reliable, efficient, and accessible.
