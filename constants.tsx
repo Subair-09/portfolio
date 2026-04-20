@@ -1,5 +1,5 @@
 
-import { Project, Experience, Certificate, BlogPost } from './types';
+import { Project, Experience, Certificate, BlogPost, ResumeData } from './types';
 
 export const PROJECTS: Project[] = [
   // Azure Projects
@@ -241,24 +241,39 @@ export const PROJECTS: Project[] = [
 export const EXPERIENCES: Experience[] = [
   {
     id: 'e1',
-    company: 'CloudScale Solutions',
-    role: 'Senior DevOps Engineer',
-    period: '2021 - Present',
+    company: 'SS Labs',
+    location: 'Lagos, Nigeria',
+    role: 'Cloud DevOps & SRE Engineer',
+    period: 'Jan 2025 – Present',
     description: [
-      'Migrated 200+ microservices from legacy data centers to AWS, reducing operational costs by 35%.',
-      'Implemented GitOps workflows using ArgoCD, improving deployment frequency by 400%.',
-      'Architected a self-service infrastructure portal for developers using Backstage and Terraform.'
+      'Multi-Cloud Architecture: Designed and operated highly available, fault-tolerant distributed systems across BOTH AWS and Azure using Terraform, achieving 100% environment parity and eliminating configuration drift.',
+      'FinOps & Cost Optimization: Drove strategic cloud cost optimization, reducing AWS/Azure infrastructure spend by 28% through rigorous tagging enforcement, automated VM right-sizing, and effective leveraging of reserved capacity and pricing models.',
+      'CI/CD & Kubernetes: Built and scaled automated deployment pipelines, reducing software delivery cycles by 60%. Managed and scaled containerized workloads utilizing Docker and Kubernetes (EKS/AKS).',
+      'Cloud Security: Enforced stringent cloud security best practices, implementing IAM least privilege (AWS IAM/Azure RBAC), automated branch protection, and secrets management using Azure Key Vault and GHAS secret scanning.'
     ]
   },
   {
     id: 'e2',
-    company: 'AutoSys Technologies',
-    role: 'Site Reliability Engineer',
-    period: '2019 - 2021',
+    company: 'Skill.Sch',
+    location: 'Lagos, Nigeria',
+    role: 'Site Reliability Engineer (SRE)',
+    period: 'Jan 2024 – Dec 2024',
     description: [
-      'Reduced MTTD (Mean Time to Detection) from 45 minutes to 8 minutes through Prometheus/Grafana alerting.',
-      'Developed automated incident response playbooks using Ansible and Python.',
-      'Managed 24/7 on-call rotation for high-traffic e-commerce systems.'
+      'Observability & SRE Practices: Centralized microservices observability using Azure Monitor, Prometheus, and Grafana. Defined and implemented SRE practices (SLIs, SLOs, error budgets) to ensure platform reliability.',
+      'Incident Response: Led root cause analysis and incident response workflows, integrating Jira with automation pipelines to reduce MTTR by 42% via custom alerting and automated incident triage.',
+      'System Hardening: Improved system reliability and performance by 15% through metric analysis and targeted kernel tuning. Ensured secure networking and managed SSL/TLS lifecycles to prevent service interruptions.'
+    ]
+  },
+  {
+    id: 'e3',
+    company: 'Hybitel Computers',
+    location: 'Lagos, Nigeria',
+    role: 'IT Infrastructure Engineer',
+    period: 'Jan 2021 – Sept 2023',
+    description: [
+      'Linux & Infrastructure Management: Managed scalable Linux-based server environments, ensuring 99.9% availability for enterprise resources and disaster recovery readiness.',
+      'Scripting & Automation: Automated repetitive system administration tasks and troubleshooting processes using Python and Bash, increasing operational efficiency by 35%.',
+      'Secure Networking: Implemented strict network security protocols, VLAN segmentation, and routing to optimize throughput by 30%, establishing resilient business continuity.'
     ]
   }
 ];
@@ -269,7 +284,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Applied Skills: Secure storage for Azure Files and Azure Blob Storage',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-applied-skills-badge.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-0380/credentials/ec3c5a390f2bfa91'
   },
   {
@@ -277,7 +292,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Applied Skills: Deploy and configure Azure Monitor',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-applied-skills-badge.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-0380/credentials/8368ce577d10030b'
   },
   {
@@ -285,7 +300,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'ISO/IEC 27001:2022 Lead Auditor',
     issuer: 'Credly',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://images.credly.com/size/340x340/images/22ee0e9d-ee2a-487f-ad9a-ec1cf82c70bf/badge.png',
     verifyUrl: 'https://www.credly.com/badges/22ee0e9d-ee2a-487f-ad9a-ec1cf82c70bf/linked_in_profile'
   },
   {
@@ -293,7 +308,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Multicloud Network Associate',
     issuer: 'Aviatrix',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://images.credly.com/size/340x340/images/4cd926e2-4dec-4404-ab84-9c0253e0059e/badge.png',
     verifyUrl: 'https://www.credly.com/badges/4cd926e2-4dec-4404-ab84-9c0253e0059e/linked_in_profile'
   },
   {
@@ -301,7 +316,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Applied Skills: Get started with Azure management tasks',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1667372393119-3d4410ef50cb?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-applied-skills-badge.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-0380/credentials/c26ff78f6f1212b'
   },
   {
@@ -309,23 +324,23 @@ export const CERTIFICATES: Certificate[] = [
     title: 'GitHub Foundations',
     issuer: 'GitHub',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1618401471353-b98aade122f1?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://images.credly.com/size/340x340/images/7d767522-4782-4a26-afe8-d11d04f2ff6f/badge.png',
     verifyUrl: 'https://www.credly.com/badges/7d767522-4782-4a26-afe8-d11d04f2ff6f/linked_in_profile'
   },
   {
     id: 'c10',
     title: 'Microsoft Certified: DevOps Engineer Expert',
     issuer: 'Microsoft',
-    date: '2023',
-    imageUrl: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=400&h=300&auto=format&fit=crop',
+    date: '2025',
+    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-7543/credentials/d27fc87f3b492daa'
   },
   {
     id: 'c11',
-    title: 'Certified FinOps Practitioner',
+    title: 'FinOps Certified Practitioner',
     issuer: 'FinOps Foundation',
-    date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=400&h=300&auto=format&fit=crop',
+    date: '2025',
+    imageUrl: 'https://f.hubspotusercontent30.net/hubfs/5576130/FinOps_Certification_Practitioner_Badge.png',
     verifyUrl: 'https://verify.skilljar.com/c/omak66523zwx'
   },
   {
@@ -333,7 +348,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Certified: Azure Fundamentals',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/SUBAIRNURUDEENADEWALE-0380/credentials/F4B1AEDA698E6E4D'
   },
   {
@@ -341,7 +356,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Certified: Azure Developer Associate',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://images.unsplash.com/photo-1667372393119-3d4410ef50cb?q=80&w=400&h=300&auto=format&fit=crop',
+    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-associate-badge.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-7543/credentials/4fade57fd621104e'
   }
 ];
@@ -419,4 +434,32 @@ export const BLOGS: BlogPost[] = [
   }
 ];
 
-export const RESUME_LINK = 'https://drive.google.com/file/d/1_your_actual_google_drive_id_here/view?usp=sharing';
+export const RESUME_DATA: ResumeData = {
+  summary: 'Performance-driven DevOps and Site Reliability Engineer (SRE) with 4+ years of experience engineering highly available, fault-tolerant multi-cloud infrastructure across AWS and Microsoft Azure. Expert in Infrastructure as Code (Terraform), scalable CI/CD pipelines (Azure DevOps/GitHub Actions), and container orchestration (EKS/AKS). Certified FinOps Practitioner and Microsoft DevOps Expert with a proven track record of driving cloud cost efficiency, enforcing enterprise security (IAM, Secrets Management), and defining SRE practices (SLIs/SLOs) to ensure 99.9% system reliability and resilience.',
+  skills: [
+    { label: "Cloud Platforms", items: ["AWS", "Microsoft Azure"] },
+    { label: "SRE & Observability", items: ["SLIs/SLOs", "Incident Response", "Prometheus", "Grafana", "App Insights"] },
+    { label: "IaC & Automation", items: ["Terraform", "Ansible", "Bicep", "CloudFormation"] },
+    { label: "CI/CD & Containers", items: ["Azure DevOps", "GitHub Actions", "Jenkins", "Docker", "Kubernetes (EKS/AKS)"] },
+    { label: "Security & FinOps", items: ["FinOps", "IAM", "VPC/VNet", "Secrets Management"] },
+    { label: "Scripting & OS", items: ["Python", "Bash", "PowerShell", "Linux"] }
+  ],
+  education: [
+    {
+      id: 'ed1',
+      degree: 'Bachelor of Science in Computer Science',
+      school: 'University of the People',
+      period: 'Expected 2029',
+      description: 'Ongoing degree program focusing on foundational and advanced computing principles.'
+    },
+    {
+      id: 'ed2',
+      degree: 'National Diploma in Computer Science',
+      school: 'Yaba College of Technology',
+      period: 'Graduated',
+      description: 'Foundational studies in computer science and information technology.'
+    }
+  ]
+};
+
+export const RESUME_LINK = 'https://drive.google.com/file/d/1GmJG00wgNYEuUke4HYMEZ7jNihOON8Mv/view?usp=sharing';

@@ -15,7 +15,27 @@ export interface Experience {
   company: string;
   role: string;
   period: string;
+  location?: string;
   description: string[];
+}
+
+export interface Education {
+  id: string;
+  degree: string;
+  school: string;
+  period: string;
+  description?: string;
+}
+
+export interface SkillCategory {
+  label: string;
+  items: string[];
+}
+
+export interface ResumeData {
+  summary: string;
+  skills: SkillCategory[];
+  education: Education[];
 }
 
 export interface Certificate {

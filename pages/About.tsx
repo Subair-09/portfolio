@@ -37,11 +37,11 @@ export const About: React.FC = () => {
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
-                  { title: "Cloud Native Infrastructure", desc: "Designing and managing cloud-native infrastructure on Microsoft Azure (Primary) and AWS (Secondary)." },
-                  { title: "Linux Environments", desc: "Building and maintaining Linux-based production environments." },
-                  { title: "CI/CD Pipelines", desc: "Implementing CI and CD pipelines for efficient and reliable deployments." },
-                  { title: "Containerization", desc: "Managing containerized workloads using Docker and Kubernetes." },
-                  { title: "DevOps & SRE", desc: "Applying DevOps and SRE practices to improve system reliability and uptime." }
+                  { title: "Multi-Cloud Infrastructure", desc: "Designing and operating highly available, fault-tolerant distributed systems across AWS and Microsoft Azure using Terraform." },
+                  { title: "SRE & Observability", desc: "Defining SLIs, SLOs, and error budgets. Implementing centralized observability with Prometheus, Grafana, and Azure Monitor." },
+                  { title: "CI/CD & Automation", desc: "Scaling automated deployment pipelines with Azure DevOps and GitHub Actions to reduce delivery cycles." },
+                  { title: "Container Orchestration", desc: "Deploying and managing containerized workloads using Docker and Kubernetes (EKS and AKS)." },
+                  { title: "Security & FinOps", desc: "Cloud cost optimization and implementing enterprise security (IAM least privilege, Secrets Management)." }
                 ].map((item, idx) => (
                   <div key={idx} className="p-6 rounded-2xl bg-white dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800">
                     <h3 className="text-lg font-bold dark:text-white mb-2">{item.title}</h3>
@@ -108,55 +108,47 @@ export const About: React.FC = () => {
                     <Cloud size={16} className="mr-2 text-primary-500" /> Cloud Platforms
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Microsoft Azure (Primary), Amazon Web Services (AWS).
+                    AWS (EC2, EKS, S3, IAM, CloudWatch), Microsoft Azure (AKS, App Service, Azure Monitor, Key Vault).
                   </p>
                 </div>
                 <div className="space-y-4">
                   <h3 className="flex items-center text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                    <Settings size={16} className="mr-2 text-primary-500" /> Core Infrastructure & DevOps
+                    <Settings size={16} className="mr-2 text-primary-500" /> IaC & Automation
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Linux (Ubuntu Server Administration), Terraform, Docker, Kubernetes (AKS, EKS).
+                    Terraform, Ansible, Bicep, CloudFormation, Jenkins.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <h3 className="flex items-center text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                    <Rocket size={16} className="mr-2 text-primary-500" /> CI/CD & Automation
+                    <Rocket size={16} className="mr-2 text-primary-500" /> CI/CD & Containers
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    GitHub Actions, Jenkins, GitLab CI, Bash Scripting.
+                    Azure DevOps, GitHub Actions, Docker, Kubernetes (EKS / AKS).
                   </p>
                 </div>
                 <div className="space-y-4">
                   <h3 className="flex items-center text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                    <Globe size={16} className="mr-2 text-primary-500" /> Web Servers & Networking
+                    <ShieldCheck size={16} className="mr-2 text-primary-500" /> Security & FinOps
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Nginx, Reverse Proxy, Load Balancing, SSL/TLS Management.
+                    Cloud Cost Optimization, IAM least privilege, Azure RBAC, Secure Networking, Secrets Management.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <h3 className="flex items-center text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                    <Cpu size={16} className="mr-2 text-primary-500" /> Backend & Data
+                    <BarChart3 size={16} className="mr-2 text-primary-500" /> SRE & Observability
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Python, Node.js, PostgreSQL, MySQL, MongoDB, Redis.
+                    SLIs, SLOs, Error Budgets, Incident Response, Prometheus, Grafana, App Insights.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <h3 className="flex items-center text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                    <BarChart3 size={16} className="mr-2 text-primary-500" /> Observability & Reliability
+                    <Wrench size={16} className="mr-2 text-primary-500" /> Scripting & OS
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400">
-                    Prometheus, Grafana, ELK Stack.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <h3 className="flex items-center text-sm font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">
-                    <Wrench size={16} className="mr-2 text-primary-500" /> Security & Platform
-                  </h3>
-                  <p className="text-slate-600 dark:text-slate-400">
-                    HashiCorp Vault, VPC Design, Cloudflare.
+                    Python, Bash, PowerShell, Linux (Ubuntu, CentOS, RHEL).
                   </p>
                 </div>
               </div>
