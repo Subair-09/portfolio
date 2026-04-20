@@ -110,68 +110,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <main className="flex-grow">
         {children}
       </main>
-
-      {/* Footer */}
-      <footer className="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div className="col-span-1 md:col-span-2">
-              <Link to="/" className="flex items-center mb-4">
-                <span className="text-xl font-extrabold dark:text-white">Subair Nurudeen Adewale</span>
-              </Link>
-              <p className="text-slate-600 dark:text-slate-400 max-w-sm">
-                Engineering resilient, scalable, and automated cloud infrastructure. 
-                Focusing on Site Reliability and DevSecOps best practices.
-              </p>
-              <div className="flex space-x-4 mt-6">
-                <a href="https://github.com/subairnurudeen" target="_blank" rel="noopener noreferrer" className="p-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg hover:border-primary-500 text-slate-600 dark:text-slate-400 transition-all">
-                  <Github size={20} />
-                </a>
-                <a href="https://www.linkedin.com/in/subair-nurudeen-adewale-1b46aa28b/" target="_blank" rel="noopener noreferrer" className="p-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg hover:border-primary-500 text-slate-600 dark:text-slate-400 transition-all">
-                  <Linkedin size={20} />
-                </a>
-                <a href="mailto:nuddywale@gmail.com" className="p-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg hover:border-primary-500 text-slate-600 dark:text-slate-400 transition-all">
-                  <Mail size={20} />
-                </a>
-              </div>
-            </div>
-            <div>
-              <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-6">Sitemap</h4>
-              <ul className="space-y-4">
-                {navItems.map((item) => (
-                  <li key={item.path}>
-                    <Link to={item.path} className="text-slate-600 dark:text-slate-400 hover:text-primary-500 transition-colors">
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-6">Expertise</h4>
-              <ul className="space-y-4 text-slate-600 dark:text-slate-400">
-                <li className="flex items-center space-x-2">
-                   <Cpu size={14} className="text-primary-500" />
-                   <span>Cloud Architecture</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                   <Shield size={14} className="text-primary-500" />
-                   <span>DevSecOps</span>
-                </li>
-                <li className="flex items-center space-x-2">
-                   <BarChart3 size={14} className="text-primary-500" />
-                   <span>SRE & Monitoring</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-900 text-center">
-            <p className="text-slate-500 dark:text-slate-500 text-sm">
-              &copy; {new Date().getFullYear()} Subair Nurudeen Adewale. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };
