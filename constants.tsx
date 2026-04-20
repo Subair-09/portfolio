@@ -284,7 +284,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Applied Skills: Secure storage for Azure Files and Azure Blob Storage',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-applied-skills-badge.png',
+    imageUrl: 'https://imgur.com/KqmtRqq.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-0380/credentials/ec3c5a390f2bfa91'
   },
   {
@@ -292,7 +292,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Applied Skills: Deploy and configure Azure Monitor',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-applied-skills-badge.png',
+    imageUrl: 'https://imgur.com/gNZJzIt.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-0380/credentials/8368ce577d10030b'
   },
   {
@@ -300,7 +300,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'ISO/IEC 27001:2022 Lead Auditor',
     issuer: 'Credly',
     date: '2024',
-    imageUrl: 'https://images.credly.com/size/340x340/images/22ee0e9d-ee2a-487f-ad9a-ec1cf82c70bf/badge.png',
+    imageUrl: 'https://imgur.com/Cs9EhYp.png',
     verifyUrl: 'https://www.credly.com/badges/22ee0e9d-ee2a-487f-ad9a-ec1cf82c70bf/linked_in_profile'
   },
   {
@@ -308,7 +308,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Multicloud Network Associate',
     issuer: 'Aviatrix',
     date: '2024',
-    imageUrl: 'https://images.credly.com/size/340x340/images/4cd926e2-4dec-4404-ab84-9c0253e0059e/badge.png',
+    imageUrl: 'https://imgur.com/01Y2ACy.png',
     verifyUrl: 'https://www.credly.com/badges/4cd926e2-4dec-4404-ab84-9c0253e0059e/linked_in_profile'
   },
   {
@@ -316,7 +316,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Applied Skills: Get started with Azure management tasks',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-applied-skills-badge.png',
+    imageUrl: 'https://imgur.com/yQGspwS.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-0380/credentials/c26ff78f6f1212b'
   },
   {
@@ -324,7 +324,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'GitHub Foundations',
     issuer: 'GitHub',
     date: '2024',
-    imageUrl: 'https://images.credly.com/size/340x340/images/7d767522-4782-4a26-afe8-d11d04f2ff6f/badge.png',
+    imageUrl: 'https://imgur.com/bJAMW4Q.png',
     verifyUrl: 'https://www.credly.com/badges/7d767522-4782-4a26-afe8-d11d04f2ff6f/linked_in_profile'
   },
   {
@@ -332,7 +332,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Certified: DevOps Engineer Expert',
     issuer: 'Microsoft',
     date: '2025',
-    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-expert-badge.png',
+    imageUrl: 'https://imgur.com/tP3mucj.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/subairnurudeenadewale-7543/credentials/d27fc87f3b492daa'
   },
   {
@@ -340,7 +340,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'FinOps Certified Practitioner',
     issuer: 'FinOps Foundation',
     date: '2025',
-    imageUrl: 'https://f.hubspotusercontent30.net/hubfs/5576130/FinOps_Certification_Practitioner_Badge.png',
+    imageUrl: 'https://imgur.com/1VRv2zF.png',
     verifyUrl: 'https://verify.skilljar.com/c/omak66523zwx'
   },
   {
@@ -348,7 +348,7 @@ export const CERTIFICATES: Certificate[] = [
     title: 'Microsoft Certified: Azure Fundamentals',
     issuer: 'Microsoft',
     date: '2024',
-    imageUrl: 'https://learn.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.png',
+    imageUrl: 'https://imgur.com/oLHn9vi.png',
     verifyUrl: 'https://learn.microsoft.com/en-us/users/SUBAIRNURUDEENADEWALE-0380/credentials/F4B1AEDA698E6E4D'
   },
   {
